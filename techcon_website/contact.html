@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechCon 2024</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>Get in Touch with Us</h2>
+            <p>Have questions or need more information about TechCon 2024? Feel free to reach out using the details below or the contact form.</p>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h3>Contact Details</h3>
+                <p>Email: <a href="mailto:info@techcon2024.com">info@techcon2024.com</a></p>
+                <p>Follow us on:</p>
+                <ul>
+                    <li><a href="https://www.facebook.com/TechCon2024" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.twitter.com/TechCon2024" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/TechCon2024" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <!-- Embedded Google Map -->
+            <div class="map">
+                <h3>Our Location</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509375!2d144.96305791531672!3d-37.81621897975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727e8ecffdc2dc!2sMelbourne%20Convention%20and%20Exhibition%20Centre!5e0!3m2!1sen!2sau!4v1701300000000!5m2!1sen!2sau" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- Contact Us Form -->
+            <div class="contact-form">
+                <h3>Contact Us</h3>
+                <form action="submit_contact.php" method="POST">
+                    <!-- Name -->
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address" required>
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your message" rows="6" required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div>
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 TechCon. All rights reserved. Copyright.</p>
+    </footer>
+</body>
+</html>
